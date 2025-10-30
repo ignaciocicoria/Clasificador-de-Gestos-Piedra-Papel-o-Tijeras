@@ -71,7 +71,7 @@ rock-paper-scissors/
    El modelo resultante se guarda como `rps_model.h5`.  
    Este repositorio ya  dispone del archivo `rps_model.h5`, por lo que este paso también puede omitirse.
 
-4. Prueba del sistema completo  
+4. **Prueba del sistema completo**  
    Ejecutar:
    ```
    python rock-paper-scissors.py
