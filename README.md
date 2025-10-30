@@ -37,14 +37,14 @@ Desarrollar un sistema de clasificación capaz de reconocer en tiempo real los g
 
 ##  Estructura del proyecto
 
-
+   ```
   ├── dataset/ # Archivos .npy generados al grabar datos (opcional)
   ├── requirements.txt # Dependencias necesarias
   ├── record_dataset.py # Script para grabar dataset
   ├── train-gesture-classifier.py # Entrena y guarda el modelo
   ├── rock-paper-scissor.py # Ejecuta la inferencia en tiempo real
   └── rps_model.h5 # Modelo entrenado (se genera automáticamente)
-
+   ```
 ## Preparación del entorno
 
 1️⃣ Crear un entorno virtual
