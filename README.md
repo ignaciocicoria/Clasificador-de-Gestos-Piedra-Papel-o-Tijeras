@@ -38,7 +38,8 @@ Desarrollar un sistema de clasificación capaz de reconocer en tiempo real los g
 ##  Estructura del proyecto
 
    ```
-  ├── dataset/ # Archivos .npy generados al grabar datos (opcional)
+  ├── rps_data.npy # Archivo .npy generado al grabar los datos (opcional)
+  ├── rps_labels.npy # Archivo .npy generado al grabar los datos (opcional)
   ├── requirements.txt # Dependencias necesarias
   ├── record_dataset.py # Script para grabar dataset
   ├── train-gesture-classifier.py # Entrena y guarda el modelo
