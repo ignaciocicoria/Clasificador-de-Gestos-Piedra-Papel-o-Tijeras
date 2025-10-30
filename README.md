@@ -49,18 +49,31 @@ Desarrollar un sistema de clasificación capaz de reconocer en tiempo real los g
 ## Preparación del entorno
 
 1️⃣ Crear un entorno virtual
+Abrir una terminal y posicionarse en la carpeta raíz del proyecto:
+```
+cd ruta/donde/guardaste/rock-paper-scissors
+```
 Es recomendable aislar las dependencias del proyecto:
 
 python -m venv venv
 Activar el entorno:
 
-En Windows:
-
+**En Windows:**
+   ```
 venv\Scripts\activate
+   ```
+**En Linux / macOS:**
+   ```
+source venv/bin/activate
+   ```
 2️⃣ Instalar dependencias
-pip install requirements.txt
+   ```
+pip install -r requirements.txt
+   ```
 3️⃣ Verificar instalación
+   ```
 pip list
+   ```
 Esto mostrará todas las librerías instaladas y sus versiones actuales.
 
 ## Modo de uso
