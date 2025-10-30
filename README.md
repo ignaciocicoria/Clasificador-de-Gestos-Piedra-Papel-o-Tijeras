@@ -38,7 +38,8 @@ Desarrollar un sistema de clasificación capaz de reconocer en tiempo real los g
 
 ##  Estructura del proyecto
 
-rock-paper-scissors/
+rock-paper-scissors/.
+
 │.
 
 ├── record-dataset.py            # Grabación del dataset con MediaPipe.
