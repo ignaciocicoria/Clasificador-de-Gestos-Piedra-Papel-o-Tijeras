@@ -47,16 +47,18 @@ Desarrollar un sistema de clasificación capaz de reconocer en tiempo real los g
   └── rps_model.h5 # Modelo entrenado (se genera automáticamente)
    ```
 ## Preparación del entorno
+Es recomendable aislar las dependencias del proyecto.
 
 1️⃣ Crear un entorno virtual.
 
 Abrir una terminal y posicionarse en la carpeta raíz del proyecto:
 ```
-cd ruta/donde/guardaste/rock-paper-scissors
+cd ruta/donde/guardaste/los/archivos
 ```
-Es recomendable aislar las dependencias del proyecto:
-
+Ejecutar:
+```
 python -m venv venv
+```
 Activar el entorno:
 
 **En Windows:**
