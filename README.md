@@ -48,7 +48,8 @@ Desarrollar un sistema de clasificación capaz de reconocer en tiempo real los g
    ```
 ## Preparación del entorno
 
-1️⃣ Crear un entorno virtual
+1️⃣ Crear un entorno virtual.
+
 Abrir una terminal y posicionarse en la carpeta raíz del proyecto:
 ```
 cd ruta/donde/guardaste/rock-paper-scissors
