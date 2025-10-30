@@ -6,16 +6,15 @@ Este proyecto implementa un sistema completo de **reconocimiento de gestos** de 
 
 El sistema se desarrolla en tres etapas principales:
 
-1. **Grabación del dataset de gestos**  
-   Se capturan las coordenadas de los landmarks de la mano utilizando MediaPipe y se guardan en un archivo junto con su etiqueta correspondiente.
+1️⃣   Se capturan las coordenadas de los landmarks de la mano utilizando MediaPipe y se guardan en un archivo junto con su etiqueta correspondiente.
 
-2. **Entrenamiento del clasificador de gestos**  
+2️⃣ **Entrenamiento del clasificador de gestos**  
    Se entrena una red neuronal densa sobre las coordenadas de los 21 puntos clave de la mano para clasificar los gestos en tres categorías:  
    - `0`: Piedra  
    - `1`: Papel  
    - `2`: Tijeras  
 
-3. **Prueba del sistema completo**  
+3️⃣ **Prueba del sistema completo**  
    Se integra la detección de landmarks y el modelo entrenado para reconocer gestos en tiempo real a través de la cámara web.
 
 ---
@@ -38,33 +37,34 @@ Desarrollar un sistema de clasificación capaz de reconocer en tiempo real los g
 
 ##  Estructura del proyecto
 
-rock-paper-scissors/.
 
-│.
+  ├── dataset/ # Archivos .npy generados al grabar datos (opcional)
+  ├── requirements.txt # Dependencias necesarias
+  ├── record_dataset.py # Script para grabar dataset
+  ├── train-gesture-classifier.py # Entrena y guarda el modelo
+  ├── rock-paper-scissor.py # Ejecuta la inferencia en tiempo real
+  └── rps_model.h5 # Modelo entrenado (se genera automáticamente)
 
-├── record-dataset.py            # Grabación del dataset con MediaPipe.
+## Preparación del entorno
 
-├── train-gesture-classifier.py  # Entrenamiento de la red neuronal.
+1️⃣ Crear un entorno virtual
+Es recomendable aislar las dependencias del proyecto:
 
-├── rock-paper-scissors.py       # Ejecución del sistema completo.
+python -m venv venv
+Activar el entorno:
 
-│.
+En Windows:
 
-├── rps_dataset.npy              # Coordenadas de landmarks (dataset grabado).
-
-├── rps_labels.npy               # Etiquetas de gestos correspondientes (dataset grabado).
-
-├── rps_model.h5                 # Modelo entrenado (generado por train-gesture-classifier.py).
-
-│.
-
-└── images/                      # Imágenes que muestran el funcionamiento del sistema.
-
-
+venv\Scripts\activate
+2️⃣ Instalar dependencias
+pip install requirements.txt
+3️⃣ Verificar instalación
+pip list
+Esto mostrará todas las librerías instaladas y sus versiones actuales.
 
 ## Modo de uso
 
-1. **Grabación del dataset (opcional)**  
+1️⃣ **Grabación del dataset (opcional)**  
    Si se desea grabar un nuevo dataset, ejecutar:
    ```
    python record-dataset.py
@@ -73,7 +73,7 @@ rock-paper-scissors/.
    El script utiliza MediaPipe para detectar los landmarks (21 puntos clave de la mano) y almacena las coordenadas junto con sus etiquetas en archivos .  
    En este repositorio ya se incluyen los archivos `rps_dataset.npy` y `rps_labels.npy`, por lo que este paso puede omitirse.
 
-2. **Entrenamiento del modelo (opcional)**  
+2️⃣ **Entrenamiento del modelo (opcional)**  
    Si se grabo de nuevo el dataset debe volver a ejecutar el modelo, para ello ejecutar:
    ```
    python train-gesture-classifier.py
@@ -82,7 +82,7 @@ rock-paper-scissors/.
    El modelo resultante se guarda como `rps_model.h5`.  
    Este repositorio ya  dispone del archivo `rps_model.h5`, por lo que este paso también puede omitirse.
 
-4. **Prueba del sistema completo**  
+3️⃣ **Prueba del sistema completo**  
    Ejecutar:
    ```
    python rock-paper-scissors.py
