@@ -40,15 +40,25 @@ Desarrollar un sistema de clasificación capaz de reconocer en tiempo real los g
 
 rock-paper-scissors/
 │.
+
 ├── record-dataset.py            # Grabación del dataset con MediaPipe.
+
 ├── train-gesture-classifier.py  # Entrenamiento de la red neuronal.
+
 ├── rock-paper-scissors.py       # Ejecución del sistema completo.
+
 │.
+
 ├── rps_dataset.npy              # Coordenadas de landmarks (dataset grabado).
+
 ├── rps_labels.npy               # Etiquetas de gestos correspondientes (dataset grabado).
+
 ├── rps_model.h5                 # Modelo entrenado (generado por train-gesture-classifier.py).
+
 │.
+
 └── images/                      # Imágenes que muestran el funcionamiento del sistema.
+
 
 
 ## Modo de uso
